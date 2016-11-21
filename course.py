@@ -1,3 +1,5 @@
+from student import Student
+
 class Course():
 
     def __init__(self, name, code, points, students):
@@ -7,12 +9,10 @@ class Course():
 
         self.studentList = list()
         self.studentList = students
-        self.studentList.sort()
 
 
     def addStudent(self, studentObj):
         self.studentList.append(studentObj)
-        self.studentList.sort()
 
 
     def removeStudent(self, studentObj):
@@ -22,13 +22,19 @@ class Course():
         s = self.name + "\n" + self.code + " " + str(self.points) + "HP\n"
 
         for student in self.studentList:
-            s += student + "\n"
+            s += str(student) + "\n"
 
         return s
 
 
-c = Course("KURSEN", "ME1572", 15, ["KENNETH", "OVE"])
 
-c.addStudent("EWA")
+s1 = Student("Nils", "nile16", 15)
+s2 = Student("Tommi", "tosv15", 105)
+sList = [s1, s2, Student("Fredrik", "frfr14", 2)]
+
+c = Course("KURSEN", "ME1572", 15, sList)
+
+
+#c.addStudent()
 
 print(c)
