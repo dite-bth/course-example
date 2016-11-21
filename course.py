@@ -18,6 +18,7 @@ class Course():
     def removeStudent(self, studentObj):
         self.studentList.remove(studentObj)
 
+
     def __str__(self):
         s = self.name + "\n" + self.code + " " + str(self.points) + "HP\n"
 
