@@ -19,7 +19,16 @@ class Course():
         self.studentList.remove(studentObj)
 
     def __str__(self):
-        s = self.name + "\n" + self.code + " " + self.points + "HP\n"
+        s = self.name + "\n" + self.code + " " + str(self.points) + "HP\n"
 
         for student in self.studentList:
             s += student + "\n"
+
+        return s
+
+
+c = Course("KURSEN", "ME1572", 15, ["KENNETH", "OVE"])
+
+c.addStudent("EWA")
+
+print(c)
