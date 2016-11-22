@@ -2,6 +2,7 @@ from course import Course
 from student import Student
 from program import Program
 from teacher import Teacher
+from school_nile16 import School
 
 s1 = Student("Nils", "nile16", 15)
 s2 = Student("Tommi", "tosv15", 105)
@@ -17,6 +18,8 @@ p.addStudent(Student("Jesper", "jetr16", 15))
 
 ss = p.getStudents()
 
+school = School("Ulan-Bator High", "Ulan-Bator", [p])
+
 p.studentList[2].name = "Nilz"
-print(p.studentList[2])
+print(school)
 #print(p)
