@@ -5,3 +5,5 @@ class Teacher():
         self.name = name
         self.email = email
 
+    def __str__(self):
+        return self.name + " " + self.email
