@@ -15,4 +15,4 @@ class School():
         self.programs.remove(program)
 
     def __str__(self):
-        return self.name + " i " + self.city
+        return self.name + " located in " + self.city
