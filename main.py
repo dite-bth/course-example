@@ -19,5 +19,5 @@ p.addStudent(Student("Jesper", "jetr16", 15))
 
 ss = p.getStudents()
 
-print(c)
+
 print(p)

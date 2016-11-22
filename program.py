@@ -26,3 +26,15 @@ class Program():
 
     def removeStudent(self, studentObj):
         self.studentList.remove(studentObj)
+
+
+    def __str__(self):
+        s = self.name + " " + str(self.points) + " total HP\n"
+        s += "Admin: " + self.__admin.name + "\n"
+
+        for c in self.courseList:
+            s += c.name + "-" + str(c.points) + "\n"
+
+        s += str(len(self.studentList)) + " number of students."
+
+        return s
