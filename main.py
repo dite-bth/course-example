@@ -11,13 +11,12 @@ t = Teacher("Hasse", "haha@hej.com")
 
 c = Course("KURSEN", "ME1572", 15, t)
 
-
 p = Program("Kalops", 180, [c], sList, t)
-
 
 p.addStudent(Student("Jesper", "jetr16", 15))
 
 ss = p.getStudents()
 
-
-print(p)
+p.studentList[2].name = "Nilz"
+print(p.studentList[2])
+#print(p)
