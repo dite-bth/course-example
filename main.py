@@ -4,22 +4,33 @@ from program import Program
 from teacher import Teacher
 from school_nile16 import School
 
-s1 = Student("Nils", "nile16", 15)
-s2 = Student("Tommi", "tosv15", 105)
-sList = [s1, s2, Student("Fredrik", "frfr14", 2)]
+import sys
 
-t = Teacher("Hasse", "haha@hej.com")
 
-c = Course("KURSEN", "ME1572", 15, t)
 
-p = Program("Kalops", 180, [c], sList, t)
 
-p.addStudent(Student("Jesper", "jetr16", 15))
+def inputSchool():
+    n = input("School name: ")
+    c = input("School city: ")
 
-ss = p.getStudents()
+    sc = School(n, c)
 
-school = School("Ulan-Bator High", "Ulan-Bator", [p])
+def inputStudent():
+    n = input("Enter student name: ")
 
-p.studentList[2].name = "Nilz"
-print(school)
-#print(p)
+    a = n.split()
+    print(a)
+    a = ''.join(w[0:2].lower() for w in a)
+    s = Student(n, a)
+
+def inputC
+
+while True:
+    q = input("Select action 1. Student 2. Course 3. Program 4. School 5. Quit: ")
+
+    if q == "5":
+        sys.exit()
+    elif q == "1":
+
+    else:
+        print("Please enter 1 to 5.")
