@@ -1,13 +1,19 @@
 class Program():
 
 
-    def __init__(self, name, points, courseList, students):
+    def __init__(self, name, points, courseList, students, teacherObj=None):
         self.name = name
         self.points = points
         self.courseList = courseList
 
+        self.__admin = teacherObj
+
         self.studentList = list()
         self.studentList = students
+
+
+    def setAdmin(self, teacherObj):
+        self.__admin = teacherObj
 
 
     def getStudents(self):
