@@ -1,17 +1,23 @@
 class Program():
 
 
-    def __init__(self, name, points, courseList):
+    def __init__(self, name, points, courseList, students):
         self.name = name
         self.points = points
         self.courseList = courseList
 
+        self.studentList = list()
+        self.studentList = students
 
-    def getStudentsInCourses(self):
-        programStudents = list()
 
-        for course in self.courseList:
-           for student in course.studentList:
-               programStudents.append(student)
+    def getStudents(self):
 
-        return programStudents
+        return self.studentList
+
+
+    def addStudent(self, studentObj):
+        self.studentList.append(studentObj)
+
+
+    def removeStudent(self, studentObj):
+        self.studentList.remove(studentObj)
