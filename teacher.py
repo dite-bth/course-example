@@ -1,8 +1,10 @@
-class Teacher():
+from person import Person
+
+class Teacher(Person):
 
 
     def __init__(self, name, email):
-        self.name = name
+        super().__init__(name)
         self.email = email
 
 
