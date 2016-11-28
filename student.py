@@ -1,8 +1,10 @@
-class Student():
+from person import Person
+
+class Student(Person):
 
 
     def __init__(self, name, acronym, points=0):
-        self.name = name
+        super().__init__(name)
         self.points = points
         self.acronym = acronym
         self.email = acronym + "@bth.se"

@@ -7,5 +7,5 @@ from school_nile16 import School
 import sys
 
 
-t = Teacher("Arne", "a@hej.ru")
+t = Teacher("Arne")
 print(t)
