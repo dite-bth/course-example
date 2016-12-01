@@ -1,11 +1,17 @@
-from course import Course
-from student import Student
-from program import Program
 from teacher import Teacher
-from school_nile16 import School
-
-import sys
 
 
+
+from bth import program as prog
+from student import Student
+from course import Course
+
+s = Student("Sven", "sasa")
+c = Course("MIntro", "ME1571", 15)
+cl = [c]
+sl = [s]
 t = Teacher("Arne")
-print(t)
+
+p = prog.Program("IW", 180, cl, sl, t)
+
+print(p)
